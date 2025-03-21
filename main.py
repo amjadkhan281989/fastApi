@@ -10,3 +10,12 @@ def index():
 @app.get('/about')
 def about():
     return {'data':'about page'}
+
+@app.get('/blog/id')
+def index_blog_id():
+    return {'data':'blog id'}
+
+@app.get('/blog/{id}')
+def show(id):
+    # fetch blog with id = id
+    return {'data':id}
