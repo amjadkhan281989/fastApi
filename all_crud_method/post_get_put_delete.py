@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import psycopg2
 
 app = FastAPI()
 data = []
