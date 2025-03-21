@@ -10,3 +10,4 @@ def index():
 @app.get('/about')
 def about():
     return {'data':'about page'}
+
