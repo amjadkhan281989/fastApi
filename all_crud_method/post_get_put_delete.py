@@ -1,10 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import psycopg2
-<<<<<<< HEAD
 
-=======
->>>>>>> 8ebabc0750b271e883aac355cb16e5f72989e02f
 
 app = FastAPI()
 data = []
