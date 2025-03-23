@@ -2,11 +2,27 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import psycopg2
 
+
 app = FastAPI()
 data = []
 
+<<<<<<< HEAD
 conn = psycopg2.connect(
     
+=======
+db_name = "test"
+db_user = "postgres"
+db_pswd = "1234"
+db_host = "localhost"
+db_port = "5432"
+
+conn = psycopg2.connect(
+            dbname = db_name,
+            user = db_user,
+            password = db_pswd,
+            host = db_host,
+            port = db_port
+>>>>>>> 38db9814fdf519effa126268e3781e62bed05688
 )
 
 class Book(BaseModel):
