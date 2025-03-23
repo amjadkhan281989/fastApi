@@ -5,6 +5,9 @@ import psycopg2
 app = FastAPI()
 data = []
 
+conn = psycopg2.connect(
+    
+)
 
 class Book(BaseModel):
     title: str
